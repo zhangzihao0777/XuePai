@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecf3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/toolbar"
+        android:layout_height="@dimen/userToolbarHeight">
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/titletext"
+            android:layout_height="@dimen/menuitemSize"
+            android:layout_toRightOf="@id/back"
+            android:gravity="center_vertical"
+            android:text="eason" />
+
+        <Button
+            android:id="@+id/back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/menuitemSize"
+            android:layout_height="@dimen/menuitemSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back2" />
+
+        <Button
+            android:id="@+id/modify"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/smallButtonSize"
+            android:layout_height="@dimen/smallButtonSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_modify" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="@dimen/largepicWidth"
+            android:layout_height="@dimen/largepicWidth"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:src="@drawable/headpic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/base_background_color"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的人民π"
+                    android:textColor="@color/apptheme_second_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/smallButtonSize"
+                        android:layout_height="@dimen/smallButtonSize"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_money" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/apptheme_third_color"
+                        android:textSize="@dimen/nameTextSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的影响力"
+                    android:textColor="@color/apptheme_second_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/smallButtonSize"
+                        android:layout_height="@dimen/smallButtonSize"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_downloadnum" />
+
+                    <TextView
+                        android:id="@+id/downloadNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/apptheme_third_color"
+                        android:textSize="@dimen/nameTextSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="我的排名"
+                    android:textColor="@color/apptheme_second_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/smallButtonSize"
+                        android:layout_height="@dimen/smallButtonSize"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_rank" />
+
+                    <TextView
+                        android:id="@+id/rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/apptheme_third_color"
+                        android:textSize="@dimen/nameTextSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/how_to_get_pai"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="如何获得人民π?" />
+    </LinearLayout>
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/uploadlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" />
+</LinearLayout>

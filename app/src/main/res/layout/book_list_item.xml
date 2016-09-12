@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bool_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/thumbnailWidth"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_step1">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/default_image"
+            android:scaleType="centerInside" />
+
+        <com.wangyi.UIview.widget.view.ScrollingTextView
+            android:id="@+id/item_icontitle"
+            style="@style/Typography_Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-thin"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_step1">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/apptheme_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/categroy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/apptheme_second_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/uploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/apptheme_second_color"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

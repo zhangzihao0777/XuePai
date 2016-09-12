@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/toolbar"
+        android:layout_height="@dimen/smallToolbarHeight"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_step1">
+
+        <com.wangyi.UIview.widget.view.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_step1"
+            android:layout_toLeftOf="@+id/cancel"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_en"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="英语"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_history"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="近代史"
+                android:textColor="#ffffff"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_mao"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="毛概"
+                android:textColor="#ffffff"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_article"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="艺术"
+                android:textColor="#ffffff"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_law"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="法律"
+                android:textColor="#ffffff"
+               />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/search_max"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/tuoyuan_lv"
+                android:gravity="center"
+                android:text="马克思"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_step1"
+        android:text="请输入关键字" />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/booklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="#f5f5f5" />
+</LinearLayout>

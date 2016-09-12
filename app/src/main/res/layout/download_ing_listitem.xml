@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:background="#e2fbdc" />
+
+
+    <CheckBox
+        android:id="@+id/select_state"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/check_selecter"
+        android:button="@null"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/click_down"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.45"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ProgressBar
+                android:id="@+id/down_progress"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/down_length"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/download_state"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/down_pause"
+        android:focusable="false" />
+
+</LinearLayout>
