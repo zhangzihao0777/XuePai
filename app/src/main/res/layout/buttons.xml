@@ -79,7 +79,7 @@
                 android:onClick="OnEditAnnotButtonClick"
                 android:padding="8dp"
                 android:src="@drawable/ic_annotation"
-                android:visibility="gone" />
+                />
         </LinearLayout>
 
         <RelativeLayout
